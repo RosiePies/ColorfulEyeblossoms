@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cyan_dye",
+  "ingredients": [
+    "colorful_eyeblossoms:cyan_open_eyeblossom"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:cyan_dye"
+  }
+}

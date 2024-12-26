@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "colorful_eyeblossoms",
+  "version": "0.0.1",
+  "name": "ColorfulEyeblossoms",
+  "description": "Adds eyeblossom variants to the rest of the 15 dyes!",
+  "authors": ["RosiePies"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.rosiepies.colorfuleyeblossoms.ColorfulEyeblossomsDataGen"
+    ],
+    "client": [
+      "com.rosiepies.colorfuleyeblossoms.client.ColorfulEyeblossomsClient"
+    ],
+    "main": [
+      "com.rosiepies.colorfuleyeblossoms.ColorfulEyeblossoms"
+    ]
+  },
+  "mixins": [
+    "colorful_eyeblossoms.mixins.json",
+    {
+      "config": "colorful_eyeblossoms.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
